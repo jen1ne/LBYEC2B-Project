@@ -18,7 +18,7 @@ void gatherinfo(int i){
     cout<<"Age: ";
     std::getline(cin,ppl.age[i]);
 
-    cout<<"Sex: ";
+    cout<<"Sex (M/F): ";
     std::getline(cin,ppl.sex[i]);
 
     cout<<"Vaccinated (Y/N): ";
