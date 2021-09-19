@@ -25,7 +25,8 @@ int main()
     int morningfrom, afternoonfrom, eveningfrom; 
 
     system("clear"); //for macOS  
-    //system("clc"); //i think this is for windows
+    //system("clc"); //this is for windows
+    //program and group information
     cout<<"=====================  Welcome to the COVID-19 Database Program  =====================\n\n";
     counter=0;
     cout<<"\n\n"; 
@@ -46,23 +47,27 @@ int main()
 
     while(continuee!=0)
     {
+    //program continues with character entry
     cout<<"Press any letter to continue...";
     cout<<"\n";
     scanf("%s",&magicword);
-
-    magicwordd = strcmp(magicword,stop);
+        
+    //program will stop only when when "stop" is entered
+    magicwordd = strcmp(magicword,stop); 
     if(magicwordd==0){
         continuee=0;
         printf("Terminating...");
-        Counters(counter,ppl,&vaccineYY, &vaccineNN, &quarantineYY, &malecounterr, &femalecounterr);
-        save(counter,ppl,vaccineYY,vaccineNN,quarantineYY,malecounterr,femalecounterr,morning,afternoon,evening);
+        Counters(counter,ppl,&vaccineYY, &vaccineNN, &quarantineYY, &malecounterr, &femalecounterr); 
+        save(counter,ppl,vaccineYY,vaccineNN,quarantineYY,malecounterr,femalecounterr,morning,afternoon,evening); // input and save data to counter and forms
 
         return 0;
     }
-
+        
+    //counter to display entry number for each form 
     system("clear"); 
-    counter+=1;
-    cout<<"Entry no. " <<counter; cout<<"\n\n";
+    counter+=1; 
+    cout<<"Entry no. " <<counter; cout<<"\n\n"; 
+    //function to save data to form and for statistics counters
     gatherinfo(counter,&morningfrom,&afternoonfrom,&eveningfrom);
     morning = morning+morningfrom;
     afternoon = afternoon+afternoonfrom;
