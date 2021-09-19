@@ -15,13 +15,14 @@ int Counters(int loop, struct person ppl, int* vaccineYY, int* vaccineNN, int* q
     int quarantinedY;
     int malecounter;
     int femalecounter;
-
+    
     vaccineY = 0;
     vaccineN = 0;
     quarantinedY = 0;
     malecounter = 0;
     femalecounter =0;
-
+    
+    //string declarations for string comparison functions
     string stringY = "Y";
     string stringN = "N";
     string Male = "M";
