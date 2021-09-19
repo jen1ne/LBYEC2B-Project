@@ -17,12 +17,14 @@ int timecounter(int* morningcounterr, int* afternooncounterr, int* eveningcounte
 	hour = now->tm_hour;
 	//cout<<"Hour: "<<hour;
 	
+	//MorningCounter	
 	if (hour >= 0 && hour < 12)
 	{
 		//cout<<"Morning";
 		morningcounter++;
 	}
 	
+	//AfternoonCounter
 	if (hour >= 12 && hour < 17)
 	{
 		//cout<<"Afternoon";
