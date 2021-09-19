@@ -15,6 +15,8 @@ int gatherinfo(int i, int* morning, int* afternoon, int* evening)
     timecounter(&morningcounterr, &afternooncounterr, &eveningcounterr);
     
     cin.ignore();
+    
+    //Input entries for users
     cout<<"Name: ";
     std::getline(cin, ppl.name[i]);
 
