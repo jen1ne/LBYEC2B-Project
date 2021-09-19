@@ -19,7 +19,8 @@ void save(int loop, struct person ppl, int vaccineYY, int vaccineNN, int quarant
     final = strtok(title,"\r\n");
 
     fileOut.open(final);
-
+    
+    //compile certain demographics into one summary to print
     fileOut<<"=======================  SUMMARY  =======================";
     fileOut<<"\n\n";
     fileOut<<"Total Vaccinated:           "<<vaccineYY;
@@ -34,7 +35,8 @@ void save(int loop, struct person ppl, int vaccineYY, int vaccineNN, int quarant
     fileOut<<"======================= INDIVIDUALS =======================\n";
     
     for(i=1; i<=loop; i++)
-    {
+    {  
+        //Printing out individual entries onto file
         fileOut<<title; fileOut<<"\n\n";
         fileOut<<"Entry: "<<i<<"\n\n\n";
         fileOut<<"Name:            "<<ppl.name[i]; fileOut<<"\n";
