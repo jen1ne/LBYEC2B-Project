@@ -8,6 +8,7 @@ int gatherinfo(int i);
 void save(int loop, struct person ppl, int vaccineYY, int vaccineNN, int quarantineYY, int malecounterr, int femalecounterr, int morning, int afternoon, int evening);
 int Counters(int loop, struct person ppl);
 
+//Structure for contact tracing form
 struct person
 {
     std::string date[10000];
